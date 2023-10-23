@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CepForm</title>
+    <link rel="stylesheet" href="../css/cep.css">
+</head>
+<body>
+    <div class="container">
+        <div id="form">
+            <h1>Adress</h1>
+            <p>
+                CEP: <input type="text" id="cep" placeholder="Insira seu CEP" required>
+            </p>
+            <p>
+                Rua: <input type="text" id="rua" placeholder="Nome da Rua">
+            </p>
+            <p>
+                Número: <input type="number" id="numero" placeholder="Número da Rua">
+            </p>
+            <p>
+                Bairro: <input type="text" id="bairro" placeholder="Bairro">
+            </p>
+            <p>
+                UF: <input type="text" id="uf" placeholder="Estado">
+            </p>
+            <p>
+                Cidade: <input type="text" id="cidade" placeholder="Insira seu CEP">
+            </p>
+        </div>
+        <div class="btn-container">
+            <button id="btnLimpar">Limpar</button>
+            <button id="btnSalvar">Salvar</button>
+        </div>
+
+    </div>
+
+    <!-- Pop-up para exibir mensagem de sucesso -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <p>Formulário salvo com sucesso!</p>
+        </div>
+    </div>
+
+    <script src="../js/cep.js"></script>
+</body>
+</html>

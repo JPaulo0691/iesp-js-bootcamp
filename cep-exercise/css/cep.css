@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #0074D9, #000);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#form {
+    margin-bottom: 20px;
+}
+
+#form h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Adicione uma classe aos botões para estilização específica */
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; /* Ajuste o valor conforme necessário para o espaçamento desejado */
+}
+
+#btnSalvar {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Adicione margem à esquerda para separar do botão "Limpar" */
+}
+
+
+#btnLimpar {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnSalvar:hover, #btnLimpar:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 30, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #001F3F; /* Cor de fundo azul marinho */
+    color: white; /* Texto branco */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ff0000;
+}
+
+
+
